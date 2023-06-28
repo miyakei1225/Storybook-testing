@@ -24,14 +24,14 @@ type Story = StoryObj<typeof TestButton>;
 
 export const Default: Story = {
   args: {
-    label: "Default",
+    label: "Submit",
     "data-testid": "button",
   },
   play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement);
 
     await step("ボタンにLabelの文字列が表示されている", async () => {
-      await expect(canvas.getByText("Default")).toBeInTheDocument();
+      await expect(canvas.getByText("Submit")).toBeInTheDocument();
     });
   },
 };
