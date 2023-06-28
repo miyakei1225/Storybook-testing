@@ -38,8 +38,8 @@ export const Profile = ({ testId, label, text, href, primary = false, ...props }
   return (
     <div>
       <text>{currentUser?.id}</text>
-      <text>{currentUser?.bio}</text>
       <text>{currentUser?.location}</text>
+      <text>{currentUser?.bio}</text>
       <text>{currentUser?.name}</text>
       <text>{currentUser?.userName}</text>
       <text>{currentUser?.website}</text>
